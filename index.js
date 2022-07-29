@@ -1,12 +1,12 @@
-var express = require("express");
+// var express = require("express");
 
-var users = require('./routes/users')
-var products = require('./routes/products')
+// var users = require('./routes/users')
+// var products = require('./routes/products')
 
-var app = express()
+// var app = express()
 
-app.use('/users', users)
-app.use('/products', products)
+// app.use('/users', users)
+// app.use('/products', products)
 
 
-app.listen(3000)
+// app.listen(3000)
