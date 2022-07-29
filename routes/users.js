@@ -25,4 +25,22 @@ router.get('/string-regex/search/:key([a-zA-Z]{4})', (req, res) => {
 })
 
 
+
+// wildcards for url error handling
+
+
+// router.get('*', (req, res) => {
+//     res.send("URL NOT FOUND")
+// })
+
+router.get('*', (req, res) => {
+    var resObj ={
+        statusCode : 404,
+        statusMessage : "URL NOT FOUND!"
+    }
+
+    res.send(resObj)
+})
+
+
 module.exports = router
